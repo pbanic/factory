@@ -43,12 +43,14 @@ body {
   display: flex;
   width: 46.875rem;
   padding-top: 10rem;
+  margin-left: -7%;
 }
 
 .SlideshowContainerBottom {
   display: flex;
   width: 46.25rem;
   padding-bottom: 10rem;
+  margin-left: -7%;
 }
 
 .SlidesTop {
@@ -62,7 +64,7 @@ body {
 }
 
 .ButtonContainer {
-  padding-left: 14.3rem;
+  padding-left: 11rem;
   padding-top: 23.125rem;
   width: 60px;
   height: 70px;
