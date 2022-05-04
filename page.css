@@ -1,4 +1,4 @@
-.ButtonContainer, .SlideshowButtonContainer, .AllContainer {
+.ButtonContainer, .AllContainer, .SlideshowButtonContainer {
   display: flex;
   flex-flow: row wrap;
 }
@@ -13,7 +13,7 @@ body {
   width: 300.93px;
   height: 296px;
   padding-top: 10rem;
-  padding-left: 19px;
+  padding-left: 1.188rem;
 }
 
 .Title {
@@ -90,19 +90,6 @@ button:hover {
 
 img {
   border-radius: 5px;
-}
-
-#PrevAct {
-  left: 0;
-}
-
-#NextAct {
-  right: 0;
-}
-
-.transition {
-  transition: 0 0.7s;
-  opacity: 0;
 }
 
 /*# sourceMappingURL=page.css.map */
