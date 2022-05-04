@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Photo Slider">
@@ -7,55 +8,62 @@
     <meta name="author" content="Petra Banić">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Photo Slider</title>
-    <link rel="stylesheet" href="page.css"/>
+    <link rel="stylesheet" href="page.css" />
 </head>
+
 <body>
-    <div class="BigContainer">
+    <div class="AllContainer">
         <div class="SlideshowButtonContainer">
             <div class="SlideshowContainer">
-                <div class="SlidesOne">
-                    <img src="Assets/slider-image-7.jpg" alt="AssetOne">
+                <div class="SlideshowContainerTop">
+                    <div class="SlidesTop">
+                        <img src="Assets/slider-image-7.jpg" alt="AssetOne" width="220px" height="200px">
+                    </div>
+                    <div class="SlidesTop">
+                        <img src="Assets/slider-image-6.jpg" alt="AssetTwo" width="120px" height="200px">
+                    </div>
+                    <div class="SlidesTop">
+                        <img src="Assets/slider-image-9.jpg" alt="AssetThree" width="220px" height="200px">
+                    </div>
+                    <div class="SlidesTop">
+                        <img src="Assets/slider-image-8.jpg" alt="AssetFour" width="180px" height="200px">
+                    </div>
+                    <div class="SlidesTop">
+                        <img src="Assets/slider-image-5.jpg" alt="AssetFive" width="260px" height="200px">
+                    </div>
                 </div>
-                <div class="SlidesOne">
-                    <img src="Assets/slider-image-6.jpg" alt="AssetTwo">
-                </div>
-                <div class="SlidesOne">
-                    <img src="Assets/slider-image-9.jpg" alt="AssetThree">
-                </div>
-                <div class="SlidesOne">
-                    <img src="Assets/slider-image-8.jpg" alt="AssetFour">
-                </div>
-                <div class="SlidesOne">
-                    <img src="Assets/slider-image-5.jpg" alt="AssetFive">
-                </div>
-            </div>
-            <div class="SlideshowContainer">
-                <div class="SlidesTwo">
-                    <img src="Assets/slider-image-4.jpg" alt="AssetSix">
-                </div>
-                <div class="SlidesTwo">
-                    <img src="Assets/slider-image-1.jpg" alt="AssetSeven">
-                </div>
-                <div class="SlidesTwo">
-                    <img src="Assets/slider-image-2.jpg" alt="AssetEight">
-                </div>
-                <div class="SlidesTwo">
-                    <img src="Assets/slider-image-3.jpg" alt="AssetNine">
+                <div class="SlideshowContainerBottom">
+                    <div class="SlidesBottom">
+                        <img src="Assets/slider-image-4.jpg" alt="AssetSix" width="220px" height="200px">
+                    </div>
+                    <div class="SlidesBottom">
+                        <img src="Assets/slider-image-1.jpg" alt="AssetSeven" width="260px" height="200px">
+                    </div>
+                    <div class="SlidesBottom">
+                        <img src="Assets/slider-image-2.jpg" alt="AssetEight" width="120px" height="200px">
+                    </div>
+                    <div class="SlidesBottom">
+                        <img src="Assets/slider-image-3.jpg" alt="AssetNine" width="180px" height="200px">
+                    </div>
                 </div>
             </div>
             <div class="ButtonContainer">
-                <button type="button" id="PrevAct"><img src="./Assets/arrow-gray-left.png" height="100" width="100"
-                        alt="BackButton" id="BackButton"/></button>
-                <button type="button" id="NextAct"><img src="./Assets/arrow-gray-right.png" height="100" width="100"
-                        alt="NextButton" id="NextButton"/></button>
+                <div class="PrevButton">
+                    <button type="button" id="PrevAct"><img src="./Assets/arrow-gray-right.png" width="9.98px"
+                            height="16px" alt="BackButton" id="BackButton" /></button>
+                </div>
+                <div class="NextButton">
+                    <button type="button" id="NextAct"><img src="./Assets/arrow-gray-left.png" width="9.98px"
+                            height="16px" alt="NextButton" id="NextButton" /></button>
+                </div>
             </div>
         </div>
-        <div class="TextContainer">
-            <h1 class="Title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-            <p class="Text">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-        </div>
+        <section class="TextContainer">
+            <h1 class="Title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h1>
+            <p class="Text">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat.</p>
+        </section>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script src="page.js" defer></script>

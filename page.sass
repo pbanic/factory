@@ -1,60 +1,87 @@
+$font-stack: "SourceSansPro", sans-serif
+
+%flex
+  display: flex
+  flex-flow: row wrap
+
 body
   margin: 0
-  font-family: "SourceSansPro"
+  font: 100% $font-stack
+  letter-spacing: -0.2px
 
-.BigContainer
-  display: flex
-  align-items: flex-start
-  justify-content: flex-start
-  justify-items: flex-start
-
+.AllContainer
+  @extend %flex
 .SlideshowButtonContainer
-  display: flex
-  flex-flow: row wrap
-  align-items: center
-  width: auto
-  margin-top: 100px
+  @extend %flex
 
 .TextContainer
-  display: flex
-  flex-flow: column wrap
-  width: 450px
-  margin-right: 300px
-  margin-top: 80px
+  width: 300.93px
+  height: 296px
+  padding-top: 10rem
+  padding-left: 19px
 
 .Title
-  color: #134880
   display: flex
-  letter-spacing: -0.2px
+  align-items: flex-end
+  width: 300.93px
+  height: 120px
+  font-weight: 700
+  font-size: 32px
+  line-height: 38px
+  color: #134880
+  padding-bottom: 1.25rem
 
 .Text
-  color: black
   display: flex
-  letter-spacing: -0.2px
+  align-items: center
+  width: 300.93px
+  height: 156px
+  font-weight: 400
+  font-size: 18px
+  line-height: 26px
+  color: #484A4C
 
-.SlideshowContainer
+.SlideshowContainerTop
   display: flex
-  width: 800px
+  width: 46.875rem
+  padding-top: 10rem
 
-.SlidesOne
+.SlideshowContainerBottom
   display: flex
-  justify-content: flex-start
-  padding-right: 4px
-  padding-bottom: 10px
+  width: 46.25rem
+  padding-bottom: 10rem
 
-.SlidesTwo
-  display: flex
-  justify-content: flex-start
-  padding-right: 4px
+.SlidesTop
+  padding-bottom: 0.625rem
+  padding-right: 0.625rem
+  height: 200px
 
-img
-  max-width: 80%
-  height: auto
+.SlidesBottom
+  padding-right: 0.625rem
 
 .ButtonContainer
-  display: flex
-  flex-flow: row wrap
-  width: 30px
+  @extend %flex
+  padding-left: 14.3rem
+  padding-top: 23.125rem
+  width: 60px
+  height: 70px
 
-.PrevAct, .NextAct
-  padding: 10px
+button
+  height: 60px
+  width: 60px
+  padding: 0.625rem
+  border: 1px solid #DDDDDD
+  box-sizing: border-box
+  border-radius: 5px
+  transform: matrix(-1, 0, 0, 1, 0, 0)
+
+button:hover
+  border: 1px solid #134880
+  box-sizing: border-box
+  border-radius: 5px
+
+.PrevButton
+  padding-bottom: 0.625rem
+
+img
+  border-radius: 5px

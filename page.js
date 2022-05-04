@@ -7,18 +7,18 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $("#PrevAct").hover(function () {
-    $("#BackButton").attr("src", "./Assets/arrow-blue-left.png");
+    $("#BackButton").attr("src", "./Assets/arrow-blue-right.png");
   },
   function() {
-    $("#BackButton").attr("src", "./Assets/arrow-gray-left.png");
+    $("#BackButton").attr("src", "./Assets/arrow-gray-right.png");
   })
 });
 
 $(document).ready(function () {
   $("#NextAct").hover(function () {
-    $("#NextButton").attr("src", "./Assets/arrow-blue-right.png");
+    $("#NextButton").attr("src", "./Assets/arrow-blue-left.png");
   },
   function() {
-    $("#NextButton").attr("src", "./Assets/arrow-gray-right.png");
+    $("#NextButton").attr("src", "./Assets/arrow-gray-left.png");
   })
 });
