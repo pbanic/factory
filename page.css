@@ -92,4 +92,17 @@ img {
   border-radius: 5px;
 }
 
+#PrevAct {
+  left: 0;
+}
+
+#NextAct {
+  right: 0;
+}
+
+.transition {
+  transition: 0 0.7s;
+  opacity: 0;
+}
+
 /*# sourceMappingURL=page.css.map */
