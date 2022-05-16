@@ -1,0 +1,153 @@
+.element, .footer-elem, .header-elem {
+  background: #DDDDDD;
+  width: 941px;
+}
+
+.slide, .slideshow-container-top, .slideshow-container-bottom {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+
+body {
+  margin: 0;
+  font: 100% "SourceSansPro", sans-serif;
+  letter-spacing: -0.2px;
+}
+
+.all-container {
+  justify-content: center;
+  max-height: 600px;
+  max-width: 940px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-top: 60px;
+  margin-right: 605px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #134880;
+  padding-bottom: 1.25rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #484A4C;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.slideshow-container-bottom {
+  padding-bottom: 3.75rem;
+  margin-left: -10.8%;
+}
+
+.slideshow-container-top {
+  padding-top: 3.75rem;
+  padding-bottom: 0.625rem;
+  margin-left: -4.5%;
+}
+
+.slides-top {
+  padding-bottom: 0.625rem;
+  padding-right: 0.625rem;
+  height: 200px;
+}
+
+.slides-bottom {
+  padding-right: 0.625rem;
+  height: 200px;
+}
+
+.button-container {
+  width: 60px;
+  padding-top: 270px;
+  margin-left: -70px;
+  padding-bottom: 60px;
+}
+
+button {
+  padding: 0.625rem;
+  border: 1px solid #134880;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background-color: white;
+  width: 60px;
+  height: 60px;
+}
+
+button:hover {
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+button:hover img {
+  opacity: 0%;
+}
+button:hover .prv-act {
+  background-image: url("../Assets/arrow-gray-right.png");
+  display: inline-flex;
+}
+button:hover .nxt-act {
+  background-image: url("../Assets/arrow-gray-left.png");
+  display: inline-flex;
+}
+
+.prev-button {
+  padding-bottom: 0.625rem;
+}
+
+img {
+  border-radius: 5px;
+  height: 200px;
+  width: fit-content;
+}
+
+.header-elem {
+  border-radius: 0px 0px 5px 5px;
+  padding-bottom: 100px;
+}
+
+.footer-elem {
+  border-radius: 0px 0px 5px 5px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  padding-bottom: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.prv-button, .nxt-button {
+  width: auto;
+  height: fit-content;
+}
+
+/*# sourceMappingURL=page.css%C5%BE.map */

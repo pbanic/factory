@@ -1,0 +1,125 @@
+@use 'variables'
+@use 'mixin'
+
+.element
+  background: #DDDDDD
+  width: 941px
+
+body
+  margin: 0
+  font: 100% variables.$font-stack
+  letter-spacing: -0.2px
+
+.all-container
+  @include mixin.display-text
+  justify-content: center //horizontalno centrirano
+  max-height: 530px
+  max-width: 940px
+  flex-wrap: wrap
+
+.text-container
+  @include mixin.display-text
+  padding-left: variables.$padding
+  padding-top: 60px
+  margin-right: 605px
+
+.title
+  @include mixin.display-text
+  margin-bottom: 0px
+  margin-top: 5px
+  font-weight: 700
+  font-size: 32px
+  line-height: 38px
+  color: #134880
+  padding-bottom: 20px
+
+.text
+  @include mixin.display-text
+  font-weight: 400
+  font-size: 18px
+  line-height: 26px
+  color: #484A4C
+  margin-bottom: 0px
+  margin-top: 0px
+  margin-right: variables.$padding
+
+.slideshow-container-bottom
+  @include mixin.display-slide
+  padding-bottom: 60px
+  margin-left: -#{variables.$marg-bottom}
+
+.slideshow-container-top
+  @include mixin.display-slide
+  padding-top: 60px
+  padding-bottom: variables.$padding
+  margin-left: -#{variables.$marg-top}
+
+.slides-top
+  padding-bottom: variables.$padding
+  padding-right: variables.$padding
+  height: 200px
+
+.slides-bottom
+  padding-right: variables.$padding
+  height: 200px
+
+.button-container
+  width: 60px
+  padding-top: 270px
+  margin-left: -70px
+  padding-bottom: 60px
+
+button
+  padding: variables.$padding
+  border: 1px solid #134880
+  box-sizing: border-box
+  border-radius: 5px
+  transform: matrix(-1, 0, 0, 1, 0, 0)
+  background-color: white
+  width: 60px
+  height: 60px
+
+button:hover
+  border: 1px solid #DDDDDD
+  box-sizing: border-box
+  border-radius: 5px
+
+  & img
+    opacity: 0%
+  & .prv-act
+    background-image: url("../Assets/arrow-gray-right.png")
+    display: inline-flex
+  & .nxt-act
+    background-image: url("../Assets/arrow-gray-left.png")
+    display: inline-flex
+
+.prev-button
+  padding-bottom: variables.$padding
+
+img
+  border-radius: 5px
+  height: 200px
+  width: fit-content
+
+.header-elem
+  @extend .element
+  border-radius: 0px 0px 5px 5px
+  padding-bottom: 100px
+
+.footer-elem
+  @extend .element
+  border-radius: 0px 0px 5px 5px
+  transform: matrix(1, 0, 0, -1, 0, 0)
+  padding-bottom: 100px
+
+header
+  display: flex
+  justify-content: flex-end
+
+footer
+  display: flex
+  justify-content: flex-end
+
+.prv-button, .nxt-button
+  width: auto
+  height: fit-content
