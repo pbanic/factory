@@ -1,0 +1,158 @@
+.element,
+.footer-elem,
+.header-elem {
+    background: #ddd;
+    width: 941px
+}
+
+body {
+    font: 100% SourceSansPro, sans-serif;
+    letter-spacing: -.2px;
+    margin: 0
+}
+
+.all-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 530px;
+    max-width: 940px
+}
+
+.all-container,
+.text-container {
+    display: flex;
+    flex-direction: column
+}
+
+.text-container {
+    margin-right: 605px;
+    padding-left: 10px;
+    padding-top: 60px
+}
+
+.title {
+    color: #134880;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-top: 5px;
+    padding-bottom: 20px
+}
+
+.text,
+.title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0
+}
+
+.text {
+    color: #484a4c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-right: 10px;
+    margin-top: 0
+}
+
+.slideshow-container-bottom {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    margin-left: -10.8%;
+    padding-bottom: 60px
+}
+
+.slideshow-container-top {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    margin-left: -4.5%;
+    padding-bottom: 10px;
+    padding-top: 60px
+}
+
+.slides-top {
+    padding-bottom: 10px
+}
+
+.slides-bottom,
+.slides-top {
+    height: 200px;
+    padding-right: 10px
+}
+
+.button-container {
+    margin-left: -70px;
+    padding-bottom: 60px;
+    padding-top: 270px;
+    width: 60px
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #134880;
+    border-radius: 5px;
+    height: 60px;
+    padding: 10px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 60px
+}
+
+button,
+button:hover {
+    box-sizing: border-box
+}
+
+button:hover {
+    border: 1px solid #ddd;
+    border-radius: 5px
+}
+
+button:hover img {
+    opacity: 0
+}
+
+button:hover .prv-act {
+    background-image: url(../Assets/arrow-gray-right.png);
+    display: inline-flex
+}
+
+button:hover .nxt-act {
+    background-image: url(../Assets/arrow-gray-left.png);
+    display: inline-flex
+}
+
+.prev-button {
+    padding-bottom: 10px
+}
+
+img {
+    border-radius: 5px;
+    height: 200px;
+    width: fit-content
+}
+
+.footer-elem,
+.header-elem {
+    border-radius: 0 0 5px 5px;
+    padding-bottom: 100px
+}
+
+.footer-elem {
+    transform: matrix(1, 0, 0, -1, 0, 0)
+}
+
+footer,
+header {
+    display: flex;
+    justify-content: flex-end
+}
+
+.nxt-button,
+.prv-button {
+    height: fit-content;
+    width: auto
+}
+
+/*# sourceMappingURL=undefined.map */

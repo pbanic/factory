@@ -11,18 +11,18 @@ $(document).ready(() => {
 
 });
 
-moveSlideTop = (direction) => { 
-    if (direction === 1) { //next
-      $(".slides-top:first").before($(".slides-top:last"));
-    } else if (direction === -1) { //back
-      $(".slides-top:last").after($(".slides-top:first").fadeOut(0.5).fadeIn(800));
-    }
+moveSlideTop = (direction) => {
+  if (direction === 1) { //next
+    $(".slides-top:first").before($(".slides-top:last"));
+  } else if (direction === -1) { //back
+    $(".slides-top:last").after($(".slides-top:first").fadeOut(0.5).fadeIn(800));
+  }
 } //move slide top 
 
 moveSlideBottom = (direction) => {
-    if (direction === 1) { //next
-      $(".slides-bottom:first").before($(".slides-bottom:last"));
-    } else if (direction === -1) { //back
-      $(".slides-bottom:last").after($(".slides-bottom:first").fadeOut(0.5).fadeIn(800));
-    }
+  if (direction === 1) { //next
+    $(".slides-bottom:first").before($(".slides-bottom:last"));
+  } else if (direction === -1) { //back
+    $(".slides-bottom:last").after($(".slides-bottom:first").fadeOut(0.5).fadeIn(800));
+  }
 } //move slide bottom 
