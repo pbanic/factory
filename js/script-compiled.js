@@ -18,8 +18,7 @@ moveSlideTop = direction => {
     //back
     $(".slides-top:last").after($(".slides-top:first").fadeOut(0.5).fadeIn(800));
   }
-}; //move slide top 
-
+}; //move slide top
 
 moveSlideBottom = direction => {
   if (direction === 1) {
